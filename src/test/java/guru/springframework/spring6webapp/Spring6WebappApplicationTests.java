@@ -1,5 +1,7 @@
 package guru.springframework.spring6webapp;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,6 +19,12 @@ class Spring6WebappApplicationTests {
     MyController mController;
 
     @Test
+    void testCallingGreeting() {
+        MyController mDController = new MyController();
+        System.out.println(mDController.sayHello());
+    }
+
+    @Test
     void testAutowiredController() {
         System.out.println(mController.sayHello());
     }
@@ -30,6 +38,7 @@ class Spring6WebappApplicationTests {
 
     @Test
     void contextLoads() {
+        assertEquals("test" ,mController.getPropName());
     }
 
 }

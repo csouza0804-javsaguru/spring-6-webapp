@@ -1,9 +1,5 @@
 package guru.springframework.spring6webapp.bootstrap;
 
-import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

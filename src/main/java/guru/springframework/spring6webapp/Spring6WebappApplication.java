@@ -16,6 +16,7 @@ public class Spring6WebappApplication {
         System.out.println("In MAin method");
 
         controller.sayHello();
+        System.out.println(controller.getPropName());
     }
 
 }

@@ -7,7 +7,6 @@ import guru.springframework.spring6webapp.services.BookService;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-
 @Controller
 public class BookController  {
 
